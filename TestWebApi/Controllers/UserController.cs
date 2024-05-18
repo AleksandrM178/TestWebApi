@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TestWebApi.BLL.Logic.Contracts.User;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,10 +9,22 @@ namespace TestWebApi.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly IUserLogic _userLogic;
+        private readonly ILogger<UserController> _logger;
+
+        public UserController(
+            IUserLogic userLogic,
+            ILogger<UserController> logger)
+        {
+            _userLogic = userLogic;
+            _logger = logger;
+        }
+
         // GET: api/<UserController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            _logger.LogInformation("Пришел запрос на получение списка юзеров");
             return new string[] { "value1", "value2" };
         }
 

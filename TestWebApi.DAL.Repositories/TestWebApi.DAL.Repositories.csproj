@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestWebApi.BLL.Logic.Contracts\TestWebApi.BLL.Logic.Contracts.csproj" />
+    <ProjectReference Include="..\TestWebApi.DAL.Repositories.Contracts\TestWebApi.DAL.Repositories.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TestWebApi.BLL.Logic.Contracts.User;
 
 namespace TestWebApi.BLL.Logic.User
 {
-    public class UserLogic
+    public class UserLogic : IUserLogic
     {
     }
 }

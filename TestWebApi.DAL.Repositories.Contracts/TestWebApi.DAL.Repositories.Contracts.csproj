@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TestWebApi.BLL.Logic.Contracts\TestWebApi.BLL.Logic.Contracts.csproj" />
-  </ItemGroup>
-
 </Project>
